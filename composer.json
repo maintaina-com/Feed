@@ -1,7 +1,7 @@
 {
     "name": "horde/feed",
     "description": "Feed client library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_Feed",
     "license": "BSD-2-Clause",
     "authors": [
@@ -12,26 +12,23 @@
         }
     ],
     "version": "2.0.5",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Http": "^2",
-        "pear-pear.horde.org/Horde_Xml_Element": "^2",
+        "horde/exception": "dev-master",
+        "horde/http": "dev-master",
+        "horde/xml_element": "dev-master",
         "ext-dom": "*"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.1"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Feed": "2.*",
-        "pear-horde/Horde_Feed": "2.*"
+        "horde/test": "^2.1"
     },
     "autoload": {
         "psr-0": {
